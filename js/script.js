@@ -3,7 +3,8 @@ const images = [
     'images/nizam3.jpeg',
     'images/nizam.png',
     'images/nizam4.png',
-    'images/nizam1.jpeg'
+    'images/nizam1.jpeg',
+    'images/nizam5.JPG'
 ]
 let imgIndex = 0;
 const imgE1 = document.getElementById('banner-img');

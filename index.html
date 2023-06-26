@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body style="background-image: url('./images/background.png'); background-size: cover; background-position: center;">
+<body class="bg-[#122059]">
     <header>
-        <nav class="navbar text-white">
+        <nav class="navbar text-white w-[95%] mx-auto">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -26,7 +26,7 @@
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black rounded-box w-52">
                         <li><a class='hover:text-teal-400'>Home</a></li>
                         <li>
-                            <a class='hover:text-teal-400'>About</a>
+                            <a class='hover:text-teal-400' href="/about.html">About</a>
 
                         </li>
                         <li><a class='hover:text-teal-400'>Portfolio</a></li>
@@ -47,30 +47,176 @@
                 </ul>
             </div>
             <div class="navbar-end">
-                <a onclick="downloadPDF()" class="btn bg-[#00348B] text-pink-400 hover:bg-green-700">Download Resume</a>
+                <a onclick="downloadPDF()" class="btn bg-[#00348B] text-pink-400 hover:bg-teal-500">Download Resume</a>
             </div>
         </nav>
-        <div class="w-full h-[300px]"
+        <div class="w-full h-[400px]"
             style="background-image: url('./images/background.png'); background-size: cover; background-position: center;">
 
-            <div class="flex justify-between items-center">
+            <div class="md:flex justify-between items-center">
                 <div class="w-1/2 ml-36">
                     <h1>
-                        <a href="" class="typewrite text-7xl text-pink-500" data-period="2000"
+                        <a href="" class="typewrite ,text-3xl md:text-7xl text-pink-500" data-period="2000"
                             data-type='[ "Hi, Im Nizam.", "I am a", "Front End Web Developer.", "Experts in React, Js." ]'>
                             <span class="wrap"></span>
                         </a>
                     </h1>
                 </div>
-                <div class="w-1/2 ms-20">
+                <div class="w-1/2 ms-20 mt-10">
                     <img class="w-80 h-80 rounded-full" id="banner-img" src="images/nizam.png" alt="">
                 </div>
             </div>
 
         </div>
     </header>
+    <main class="w-[95%] mx-auto mt-20 bg-[#122059] text-white">
+        <section>
+            <h1 class="text-5xl font-bold text-center text-pink-400 mb-5 bg-[#122059]">About Me</h1>
+            <div class="md:flex items-center">
+                <div class="w-1/2 ms-20">
+                    <img class="w-80 h-80 rounded-full animate-pulse" src="images/nizam.png" alt="">
+                </div>
+                <div class="w-1/2">
+                    <h1>"This is MD Nizam Uddin, and I am a Front End web developer with around
+                        12 months of experience
+                        in
+                        learning and practicing web development. Throughout my journey, I have gained a diverse skill
+                        set encompassing React, HTML, CSS, Bootstrap, Tailwind, JavaScript, Express.js, Node.js, and
+                        MongoDB. I am also well-versed in utilizing Google Firebase for authentication and proficient in
+                        various development tools.</h1><a href="/about.html" class="text-pink-400">..Read More</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1 class="text-5xl font-bold text-center text-pink-400 mb-5 bg-[#122059]">My skills</h1>
+            <div>
+                <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+                    <div class="grid grid-cols-2 gap-5 row-gap-5 sm:grid-cols-3 lg:grid-cols-4">
+                        <div class="text-center hover:shadow-2xl animate-bounce">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
+                                <img src="images/HTML-5-logo.png" alt="React" />
+                            </div>
+                            <h6 class="mb-2 text-sm font-bold leading-5 tracking-wider uppercase">
+                                HTML5
+                            </h6>
+                        </div>
+                        <div class="text-center hover:shadow-2xl animate-bounce">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
+                                <img src="images/Java-Script-logo.png" alt="Java-Script" />
+                            </div>
+                            <h6 class="mb-2 text-sm font-bold leading-5 tracking-wider uppercase">
+                                JavaScript
+                            </h6>
+                        </div>
+                        <div class="text-center hover:shadow-2xl animate-bounce">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
+                                <img src="images/bootstrap.png" alt="Bootstrap" />
+                            </div>
+                            <h6 class="mb-2 text-sm font-bold leading-5 tracking-wider uppercase">
+                                Bootstrap
+                            </h6>
+                        </div>
+                        <div class="text-center hover:shadow-2xl animate-bounce">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
+                                <img src="images/Tailwind-CSS-Logo.png" alt="Tailwind" />
+                            </div>
+                            <h6 class="mb-2 text-sm font-bold leading-5 tracking-wider uppercase">
+                                Tailwind
+                            </h6>
+                        </div>
+                        <div class="text-center hover:shadow-2xl animate-pulse">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
+                                <img src="images/CSS-3-logo.png" alt="CSS" />
+                            </div>
+                            <h6 class="mb-2 text-sm font-bold leading-5 tracking-wider uppercase">
+                                CSS
+                            </h6>
+                        </div>
+                        <div class="text-center hover:shadow-2xl animate-pulse">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
+                                <img src="images/HTML-5-logo.png" alt="HTML" />
+                            </div>
+                            <h6 class="mb-2 text-sm font-bold leading-5 tracking-wider uppercase">
+                                HTML5
+                            </h6>
+                        </div>
+                        <div class="text-center hover:shadow-2xl animate-pulse">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
+                                <img src="images/Mongo-DB.png" alt="Mongo-DB" />
+                            </div>
+                            <h6 class="mb-2 text-sm font-bold leading-5 tracking-wider uppercase">
+                                MongoDB
+                            </h6>
+                        </div>
+                        <div class="text-center hover:shadow-2xl animate-pulse">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
+                                <img class="animate-spin" src="images/React-logo.png" alt="Firebase" />
+                            </div>
+                            <h6 class="mb-2 text-sm font-bold leading-5 tracking-wider uppercase">
+                                React
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1 class="text-5xl font-bold text-center text-pink-400 my-10 bg-[#122059]">My Recent Projects</h1>
+            <div>
+                <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+
+                    <div class="grid gap-6 row-gap-5 lg:grid-cols-3">
+                        <div>
+                            <img class="object-cover w-full h-64 mb-6 rounded shadow-lg lg:h-80 xl:h-96"
+                                src="/images//project1.png" alt="" />
+                            <h5 class="mb-2 text-xl font-bold leading-none sm:text-2xl">
+                                The School of Mindfulness
+                            </h5>
+                            <p class="text-gray-400">
+                                This projects is created by using Tailwind Css, daisyui, MongoDB, Firebase, React Icon
+                                and React Router DOM, tanstack query
+                            </p>
+                        </div>
+                        <div>
+                            <img class="object-cover w-full h-64 mb-6 rounded shadow-lg lg:h-80 xl:h-96"
+                                src="/images/projects2.png" alt="" />
+                            <h5 class="mb-2 text-xl font-bold leading-none sm:text-2xl">
+                                Toy Cars Bliss
+                            </h5>
+                            <p class="text-gray-400">
+                                This Project is Created by using React, Tailwind, MongoDB, Firebase.
+                            </p>
+                        </div>
+                        <div>
+                            <img class="object-cover w-full h-64 mb-6 rounded shadow-lg lg:h-80 xl:h-96"
+                                src="/images/project3.png" alt="" />
+                            <h5 class="mb-2 text-xl font-bold leading-none sm:text-2xl">
+                                Bistro Boss Restaurant
+                            </h5>
+                            <p class="text-gray-400">
+                                This project is created by using React Router Dom, Tailwind CSS, daisyui, Firebase,
+                                MongoDB.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="/projects.html" class="text-pink-400 btn bg-[#00348B] hover:bg-teal-500">See All Projects</a>
+            </div>
+        </section>
+    </main>
 
     <script src="js/script.js"></script>
+
 </body>
 
 </html>

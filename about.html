@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nizam's Portfolio</title>
+    <!-- CSS file link -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-[#122059]">
+
+    <nav class="navbar text-white w-[95%] mx-auto">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black rounded-box w-52">
+                    <li><a class='hover:text-teal-400'>Home</a></li>
+                    <li>
+                        <a class='hover:text-teal-400'>About</a>
+
+                    </li>
+                    <li><a class='hover:text-teal-400'>Portfolio</a></li>
+                </ul>
+            </div>
+            <div class="w-10 rounded-full flex">
+                <img class="animate-bounce" src="./images/nizam3.jpeg" />
+                <h1 class="text-pink-400 md:text-2xl font-extrabold animate-pulse">NIZAM'S PORTFOLIO</h1>
+            </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a class='hover:text-teal-400' href="/">Home</a></li>
+                <li><a class='hover:text-teal-400'>About</a></li>
+                <li><a class='hover:text-teal-400' href="/resume.html">Resume</a></li>
+
+                <li><a class='hover:text-teal-400'>Portfolio</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a onclick="downloadPDF()" class="btn bg-[#00348B] text-pink-400 hover:bg-teal-500">Download Resume</a>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <h1 class="text-5xl font-bold text-center text-pink-400 my-10 bg-[#122059]">About Me</h1>
+            <div class="md:flex justify-between gap-5 items-center">
+                <div class="w-1/2 ms-20">
+                    <img id="banner-img" class="w-3/4 h-full animate-pulse rounded-full" src="images/nizam5.JPG" alt="">
+                </div>
+                <div class="w-1/2">
+                    <p class="text-2xl text-white">"This is Md Nizam Uddin, and I am a Front End Web developer with
+                        around 12 months of experience in
+                        learning and practicing web development. Throughout my journey, I have gained a diverse skill
+                        set encompassing React, HTML, CSS, Bootstrap, Tailwind, JavaScript, Express.js, Node.js, and
+                        MongoDB. I am also well-versed in utilizing Google Firebase for authentication and proficient in
+                        various development tools.<br>
+
+                        As a web developer, I possess a strong passion for continuous learning and self-improvement. I
+                        have a natural curiosity that drives me to explore new technologies and stay up-to-date with the
+                        ever-evolving trends in the industry. I thoroughly enjoy working on frontend development, where
+                        I can create engaging user interfaces and bring responsive designs to life. Furthermore, I have
+                        a solid understanding of backend development using Express.js and Node.js, allowing me to
+                        develop efficient and scalable web applications.<br>
+
+                        I have a keen eye for detail and approach problem-solving with a proactive mindset. I excel at
+                        translating client requirements into practical and visually appealing solutions. Collaboration
+                        is something I truly value, and I thrive in team environments where I can contribute to the
+                        development of innovative web projects.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

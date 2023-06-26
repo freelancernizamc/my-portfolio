@@ -7,45 +7,70 @@
     <title>Nizam's Portfolio</title>
     <!-- CSS file link -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-black">
-    <div class="navbar w-[95%] mx-auto bg-slate-950 text-white">
-        <div class="navbar-start">
-            <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h8m-8 6h16" />
-                    </svg>
-                </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black rounded-box w-52">
-                    <li><a class='hover:text-teal-400'>Home</a></li>
-                    <li>
-                        <a class='hover:text-teal-400'>About</a>
+<body style="background-image: url('./images/background.png'); background-size: cover; background-position: center;">
+    <header>
+        <nav class="navbar text-white">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black rounded-box w-52">
+                        <li><a class='hover:text-teal-400'>Home</a></li>
+                        <li>
+                            <a class='hover:text-teal-400'>About</a>
 
-                    </li>
+                        </li>
+                        <li><a class='hover:text-teal-400'>Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="w-10 rounded-full flex">
+                    <img class="animate-bounce" src="./images/nizam3.jpeg" />
+                    <h1 class="text-pink-400 md:text-2xl font-extrabold animate-pulse">NIZAM'S PORTFOLIO</h1>
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class='hover:text-teal-400'>Home</a></li>
+                    <li><a class='hover:text-teal-400'>About</a></li>
+                    <li><a class='hover:text-teal-400' href="/resume.html">Resume</a></li>
+
                     <li><a class='hover:text-teal-400'>Portfolio</a></li>
                 </ul>
             </div>
-            <div class="w-10 rounded-full flex">
-                <img src="./images/nizam3.jpeg" />
-                <h1 class="text-teal-400 text-2xl font-extrabold">Nizam's Portfolio</h1>
+            <div class="navbar-end">
+                <a onclick="downloadPDF()" class="btn bg-[#00348B] text-pink-400 hover:bg-green-700">Download Resume</a>
             </div>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-                <li><a class='hover:text-teal-400'>Home</a></li>
-                <li><a class='hover:text-teal-400'>About</a></li>
+        </nav>
+        <div class="w-full h-[300px]"
+            style="background-image: url('./images/background.png'); background-size: cover; background-position: center;">
 
-                <li><a class='hover:text-teal-400'>Portfolio</a></li>
-            </ul>
+            <div class="flex justify-between items-center">
+                <div class="w-1/2 ml-36">
+                    <h1>
+                        <a href="" class="typewrite text-7xl text-pink-500" data-period="2000"
+                            data-type='[ "Hi, Im Nizam.", "I am a", "Front End Web Developer.", "Experts in React, Js." ]'>
+                            <span class="wrap"></span>
+                        </a>
+                    </h1>
+                </div>
+                <div class="w-1/2 ms-20">
+                    <img class="w-80 h-80 rounded-full" id="banner-img" src="images/nizam.png" alt="">
+                </div>
+            </div>
+
         </div>
-        <div class="navbar-end">
-            <a class="btn bg-teal-400 text-white hover:bg-green-700">Download Resume</a>
-        </div>
-    </div>
+    </header>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -12,7 +12,7 @@
 
 <body class="bg-[#122059]">
     <header>
-        <nav class="navbar text-white w-[95%] mx-auto">
+        <nav class="navbar text-white w-[95%] mx-auto shadow-xl">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -43,7 +43,7 @@
                     <li><a class='hover:text-teal-400' href="/about.html">About</a></li>
                     <li><a class='hover:text-teal-400' href="/resume.html">Resume</a></li>
 
-                    <li><a class='hover:text-teal-400'>Portfolio</a></li>
+                    <li><a class='hover:text-teal-400' href="/projects.html">Projects</a></li>
                 </ul>
             </div>
             <div class="navbar-end">
@@ -51,18 +51,19 @@
             </div>
         </nav>
         <header>
-            <div class="flex justify-evenly items-center">
+            <div class="w-full h-[400px] flex justify-evenly items-center shadow-xl"
+                style="background-image: url('./images/background.png'); background-size: cover; background-position: center;">
                 <div>
-                    <h1 class="text-5xl text-pink-400">My Projects</h1>
+                    <h1 class="text-5xl font-extrabold text-pink-400">My Projects</h1>
                 </div>
                 <div>
-                    <img class="rounded-full" src="./images/nizam3.jpeg" alt="nizam" />
+                    <img id="banner-img" class="rounded-full w-80 h-80" src="./images/nizam3.jpeg" alt="nizam" />
                 </div>
             </div>
         </header>
         <main class="w-[95%] mx-auto">
-            <section>
-                <h1 class="text-5xl font-bold text-center text-pink-400 my-10 bg-[#122059]">Project 01</h1>
+            <section class="shadow-xl">
+                <h1 class="text-5xl font-bold text-center text-pink-400 my-10 bg-[#122059] shadow-xl">Project 01</h1>
                 <div class="flex gap-2">
                     <div class="w-1/2">
                         <p class="text-2xl text-white">
@@ -163,15 +164,69 @@
                     <div class="w-1/2">
                         <h2 class="text-3xl text-center text-pink-400">Gallary</h2>
                         <div class="flex gap-2 h-[700px]">
-                            <img class="w-1/2" src="./images/projects2.png" />
-                            <img class="w-1/2" src="./images/projects2-2.png" />
+                            <img class="w-1/3" src="./images/projects2.png" />
+                            <img class="w-1/3" src="./images/projects2-2.png" />
+                            <img class="w-1/3" src="./images/project2-3.png" />
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h1 class="text-5xl font-bold text-center text-pink-400 my-10 bg-[#122059]">Project 03</h1>
+                <div class="flex gap-5 items-center">
+                    <div class="w-1/2">
+                        <p class="text-2xl text-white">
+                            <span class="text-pink-400 font-bold">Project Name:</span> BEST CHEF RECIPE<br>
+                            <span class="text-pink-400 font-bold">Technologies:</span> HTML, Tailwind CSS, daisyui,
+                            React Router Dom, Firebase, MongoDB, Vercel.<br>
+                        </p>
+                        <h2 class="text-xl text-center text-pink-400 font-bold mt-2">What's I do In this Projects!</h2>
+                        <br>
+                        <p class="text-xl text-white">
+                            1. In this projects i use Firebase authentication: Google, Github, Email and password.<br>
+
+                            2. In this projects data loaded from mongoDB and server deployed in vercel. Here is
+                            server <a href="https://assignment-10-server-freelancernizamc.vercel.app/"
+                                class="text-pink-400">Live
+                                Link</a><br>
+
+                            3. This projects deployed in Firebase, Here is
+                            <a href="https://assignment-10-client-2c6e3.web.app/" class="text-pink-400">Client Live
+                                Link</a><br>
+
+                            4. In home page have a Chef section with at six cards. Each card have the following
+                            information:<br>
+
+                            Chef Picture<br>
+
+                            Chef Name<br>
+
+                            Years of experience<br>
+
+                            Numbers of recipes<br>
+
+                            Likes<br>
+
+                            View Details Button <br>
+                            5. When user click details button, see selected chef's details information and Recipes.<br>
+
+
+                        </p>
+                    </div>
+                    <div class="w-1/2">
+                        <h2 class="text-3xl text-center text-pink-400">Gallary</h2>
+                        <div class="flex gap-2 h-[700px]">
+                            <img class="w-1/3" src="./images/project4.png" />
+                            <img class="w-1/3" src="./images/project4-2.png" />
+                            <img class="w-1/3" src="./images/projects4-3.png" />
 
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-
+        <script src="js/script.js"></script>
 </body>
 
 </html>

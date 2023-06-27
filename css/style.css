@@ -93,7 +93,7 @@ body {
 
 /* Testimonial */
 .slider {
-    width: 100%;
+    width: 95%;
     height: 450px;
     position: relative;
     overflow: hidden;
@@ -104,7 +104,7 @@ body {
 }
 
 .slide-ana>div {
-    width: 100%;
+    width: 95%;
     height: 100%;
     position: absolute;
     transition: all 1s;

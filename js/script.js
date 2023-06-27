@@ -5,21 +5,19 @@ const images = [
     'images/nizam4.png',
     'images/nizam1.jpeg',
     'images/nizam5.JPG'
-]
+];
+
 let imgIndex = 0;
-const imgE1 = document.getElementById('banner-img');
+const imgEl = document.getElementById('banner-img');
 setInterval(() => {
     if (imgIndex === images.length) {
         imgIndex = 0;
     }
     const imgUrl = images[imgIndex];
-    console.log(imgIndex, imgUrl);
-
-    imgE1.setAttribute('src', imgUrl)
+    imgEl.setAttribute('src', imgUrl);
     imgIndex++;
-}, 1000)
+}, 1000);
 
-// text animation
 var TxtType = function (el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -45,7 +43,9 @@ TxtType.prototype.tick = function () {
     var that = this;
     var delta = 200 - Math.random() * 100;
 
-    if (this.isDeleting) { delta /= 2; }
+    if (this.isDeleting) {
+        delta /= 2;
+    }
 
     if (!this.isDeleting && this.txt === fullTxt) {
         delta = this.period;
@@ -73,35 +73,27 @@ window.onload = function () {
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    css.innerHTML = ".typewrite>.wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
 
-// download pdf
-function downloadPDF() {
-    const link = document.createElement('a');
-    link.href = "images/Resume-of-MD-NIZAM-UDDIN.pdf";
-    link.download = 'Resume-of-MD-NIZAM-UDDIN.pdf';
-    link.click();
-}
-
-// Testmonials
-// Slider Desktop
 let slides = document.querySelectorAll(".slide-ana>div");
-let slideSayisi = slides.length;
+let slideCount = slides.length;
 let prev = document.getElementById("prev");
 let next = document.getElementById("next");
+
 for (let index = 0; index < slides.length; index++) {
     const element = slides[index];
     element.style.transform = "translateX(" + 100 * index + "%)";
 }
-let loop = 0 + 1000 * slideSayisi;
+
+let loop = 0 + 1000 * slideCount;
 
 function goNext() {
     loop++;
     for (let index = 0; index < slides.length; index++) {
         const element = slides[index];
-        element.style.transform = "translateX(" + 100 * (index - (loop % slideSayisi)) + "%)";
+        element.style.transform = "translateX(" + 100 * (index - (loop % slideCount)) + "%)";
     }
 }
 
@@ -109,7 +101,7 @@ function goPrev() {
     loop--;
     for (let index = 0; index < slides.length; index++) {
         const element = slides[index];
-        element.style.transform = "translateX(" + 100 * (index - (loop % slideSayisi)) + "%)";
+        element.style.transform = "translateX(" + 100 * (index - (loop % slideCount)) + "%)";
     }
 }
 
